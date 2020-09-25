@@ -1,0 +1,32 @@
+InfiniteWisdom:
+  telegram:
+    admin_usernames:
+      - "Penguinz"
+      - "SirChad"
+    bot_token: "1180299067:AAFo-zyKsnzULos1R49OrnQfdhs3sq_0tjU"
+    greeting_message: "Hi there!"
+    inline_badge_size: 16
+    caption_images_with_text: True
+  uploader:
+    chat_id: "-1001192990243"
+    interval: 1
+  crawler:
+    interval: 1
+  persistence:
+    url: "sqlite:///infinitewisdom.db"
+    file_base_path: "./.image_data"
+  image_analysis:
+    interval: 1
+    tesseract:
+      enabled: True
+    google_vision:
+      enabled: False
+      auth_file: "./my-auth-file.json"
+      capacity_per_month: 1000
+    microsoft_azure:
+      enabled: False
+      subscription_key: "1234567890684c3baa5a0605712345ab"
+      region: "francecentral"
+      capacity_per_month: 5000
+  stats:
+    port: 8000
